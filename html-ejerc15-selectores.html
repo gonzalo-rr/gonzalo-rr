@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Selectores</title>
+    <style>
+        body {
+            padding: 10px;
+        }
+
+        div {
+            padding: 5px;
+        }
+
+        .claseejemplo {
+            font-size: x-large;
+            background-color: brown;
+        }
+
+        #divid p {
+            padding: 40px;
+            font-size: large;
+        }
+
+        #ejemploid {
+            color: salmon;
+        }
+
+        #ejemplohover:hover {
+            color: red;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 120%;
+        }
+
+        ol li {
+            color: red;
+        }
+
+        h4,
+        h5,
+        h6 {
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Tipos de selectores que entran en examen</h1>
+        <h2>Clase (class="")</h2>
+        <p>Este selector sirve para asignar un estilo a cada etiqueta a la que le asignes una clase.</p>
+        <p>Ejemplo en código: "&lt;p class="claseejemplo">Párrafo con clase.&lt;em class="claseejemplo"> Aqui también
+            hay clase.&lt;em>&lt;/p>"</p>
+        <p>Ejemplo práctico</p>
+        <p class="claseejemplo">Párrafo con clase.<em class="claseejemplo"> Aqui también hay clase.</em></p>
+        <h3 class="claseejemplo">Aqui hay muchísima clase.</h3>
+    </div>
+    <div>
+        <h2>Identificador (id="")</h2>
+        <p>Este selector sirve para asignar un estilo a una etiqueta única y específica a la que le quieras asignar un
+            estilo único.</p>
+        <p>Ejemplo en código: "&lt;p id="estiloejemplo">Texto&lt;/p>" "&lt;/style>&lt;#estiloejemplo{}"</p>
+        <p>Ejemplo práctico:</p>
+        <p id="ejemploid">Texto</p>
+    </div>
+    <div>
+        <h2>Todos los elementos (*)</h2>
+        <div id="divid">
+            <p>Este selector se usa al principio de los estilos y afecta a todas las etiquetas</p>
+            <p>Para demostrar el efecto cambiaré el estilo de esta sección, se usa así:
+                "&lt;style>*p{padding: 40px;
+                font-size: large;}&lt;/style></p>
+        </div>
+    </div>
+    <div>
+        <h2>Varios elementos ( p, em, h1, h2)</h2>
+        <p>Este tipo de selector sirve para ponerle un mismo estilo a varias etiquetas.</p>
+        <p>Para su utilización solo hace falta usar "&lt;style>h4,h5,h6{background-color: rebeccapurple;}&lt;/style>"
+        </p>
+        <p>Ejemplo práctico: Pondré el mismo estilo a los h4, h5 y h6.</p>
+        <h4>H4</h4>
+        <h5>H5</h5>
+        <h6>H6</h6>
+    </div>
+    <div>
+        <h2>Elementos contenidos en otros elementos (ol li)</h2>
+        <p>Este selector se usa para dos etiquetas cuando quieres cambiar solo un elemento contenido en otro específico.
+        </p>
+        <p>Ejemplo en código: "&lt;style>ol il {color:red;}&lt;/style>"</p>
+        <p>Ejemplo práctico:</p>
+        <h3>lista desordenada</h3>
+        <ul>
+            <li>A</li>
+            <li>B</li>
+        </ul>
+        <h3>lista ordenada</h3>
+        <ol>
+            <li>C</li>
+            <li>D</li>
+        </ol>
+    </div>
+    <div>
+        <h2>Sobrevuleo (p:hover)</h2>
+        <p>Este selector cambia el estilo de un texto cuando se pasa por encima el ratón.</p>
+        <p>Ejemplo en código: "&lt;style>p:hover{color: red;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 120%}&lt;/style></p>
+        <p>Ejemplo práctico:</p>
+        <p id="ejemplohover">PASA ENCIMA EL RATÓN</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
