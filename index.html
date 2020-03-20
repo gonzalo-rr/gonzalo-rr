@@ -6,65 +6,197 @@
     <meta charset="utf-8">
     <style>
         body {
-            background-image: url(imagenes/fondo.jpg);
+            background-image: url(imagenes/fondo3.jpg);
+            background-repeat: no-repeat;
             background-color: antiquewhite;
             padding: 15px;
+            background-size: 100%;
+            background-position: center;
+            background-attachment: fixed;
         }
 
         div {
-            padding: 15px;
+            margin-top: 10px;
+            padding: 20px;
+            animation-name: animacion;
+            animation-duration: 5s;
         }
 
-        #introducción {
-            background-color: rgba(167, 60, 64, 0.9);
+        @keyframes animacion {
+            0% {
+                opacity: 0%;
+            }
+
+            90% {
+                opacity: 0%;
+            }
+
+            100% {
+                opacity: 100%;
+            }
+        }
+
+        #bienvenida {
+            opacity: 0%;
+            color: orange;
+            font-weight: bold;
+            font-size: xx-large;
+            align-content: center;
+            animation-name: bienvenidos;
+            animation-duration: 4s;
+        }
+
+        @keyframes bienvenidos {
+            0% {
+                margin-top: 40%;
+                opacity: 0%;
+            }
+
+            25% { 
+                opacity: 100%;
+            }
+
+            75% {
+                opacity: 100%;
+            }
+
+            100% {
+                opacity: 0%;
+            }
+        }
+
+        #indice {
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.747);
             font-family: 'Times New Roman', Times, serif;
         }
 
+        #introducción {
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.747);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #presentación {
+            width: max-content;
+            float: left;
+            width: 1100px;
+        }
+
+        #foto {
+            width: max-content;
+            float: right;
+        }
+
         #html {
-            background-color: rgba(205, 92, 92, 0.7);
+            background-color: rgba(0, 0, 0, 0.788);
             font-family: Georgia, 'Times New Roman', Times, serif
         }
 
         #css {
-            background-color: rgba(205, 92, 92, 0.7);
+            background-color: rgba(0, 0, 0, 0.486);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #css2 {
+            background-color: rgba(0, 0, 0, 0.486);
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
 
         #final {
-            background-color: rgba(205, 92, 92, 0.5);
+            background-color: rgba(0, 0, 0, 0.329);
+        }
+
+        #volver{position: fixed;}
+
+        img {
+            background-color: rgba(0, 0, 0, 0.164);
+            margin: auto;
+            display: block;
+        }
+
+        p {
+            font-size: large;
+            color: white;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: orange;
+        }
+
+        a {
+            padding: 0px;
+            background-color: rgba(214, 144, 15, 0.863);
+            color: springgreen;
+            font-size: large;
+            text-decoration: none;
+            transition-duration: 500ms;
+            transition-property: background-color, color;
+        }
+
+        a:hover {
+            background-color: rgba(240, 140, 140, 0);
+            color: white;
+        }
+
+        ul {
+            list-style: none;
         }
 
         li {
             text-align: center;
+            margin: 30px;
         }
 
-        img {
-            background-color: rgba(167, 60, 64, 0.7);
-            margin: auto;
-            display: block;
+        #indice ul {
+            padding-left: 18%;
         }
+
+        #indice ul li {
+            display: inline;
+        }
+               
     </style>
 
 </head>
 
 
 <body>
-    <div id="introducción">
-        <h1>Mi trabajo en TICII Gonzalo Rodríguez Rodríguez</h1>
-        <p>¡Bienvenidos a mi página Web! Yo soy Gonzalo Rodríguez, estudiante de segundo de bachillerato del IES Dr.
-            Fleming
-            de Oviedo (España).
-            Soy de la clase C1, en la que estoy con muy buenos compañeros y amigos.</p>
-        <p>Aunque no me gusta mucho estudiar y soy un poco vago, mis clases favoritas son física y TIC, en esta última
-            creamos nuestras propias páginas web. Me gusta la informática y me he divertido
-            mucho haciéndolas.</p>
-        <p>Fuera del instituto me gusta el cine, la fotografía y ver series. También me gusta quedar con mis amigos,
-            todo es
-            más divertido con amigos y siempre me lo paso genial
-            con ellos. </p>
+    <h1 data-aos="fade-up" id="bienvenida">
+        BIENVENIDOS A MI PÁGINA WEB
+    </h1>
+    <div data-aos="fade-up" id="introducción">
+        <div data-aos="fade-up" id="presentación">
+            <h1>Mi trabajo en TICII Gonzalo Rodríguez Rodríguez</h1>
+            <p>¡Bienvenidos a mi página Web! Yo soy Gonzalo Rodríguez, estudiante de segundo de bachillerato del IES Dr.
+                Fleming
+                de Oviedo (España).
+                Soy de la clase C1, en la que estoy con muy buenos compañeros y amigos.</p>
+            <p>Aunque no me gusta mucho estudiar y soy un poco vago, mis clases favoritas son física y TIC, en esta
+                última
+                creamos nuestras propias páginas web. Me gusta la informática y me he divertido
+                mucho haciéndolas.</p>
+            <p>Fuera del instituto me gusta el cine, la fotografía y ver series. También me gusta quedar con mis amigos,
+                todo es
+                más divertido con amigos y siempre me lo paso genial
+                con ellos. </p>
+        </div>
+        <div data-aos="fade-up" id="foto">
+            <img src="imagenes/fotomia.jpg" height="300">
+        </div>
     </div>
-    <img src="imagenes/fotomia.jpg" height="300">
-    <div id="html">
+    <div data-aos="fade-up" id="indice">
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#html">Ejercicios de introducción a HTML</a></li>
+            <li><a href="#css">Ejercicios de introducción a CSS</a></li>
+            <li><a href="#css2">Ejercicios finales de HTML y CSS</a></li>
+            <li><a href="#final">¿Qué es Web Hosting?</a></li>
+        </ul>
+    </div>
+    <div data-aos="fade-up" id="html">
         <h2>Mis ejercicios Introducción HTML</h2>
         <ul>
             <li><a href="html-ejerc1-intro1.html">Introducción</a></li>
@@ -74,9 +206,10 @@
             <li><a href="html-ejerc5-utf-8.html">Importancia del utf-8</a></li>
             <li><a href="html-ejerc6-img.html">Lístas con imágenes</a></li>
             <li><a href="html-ejerc7-escalada.html">Página sobre escalada</a></li>
+            <li><a href="#indice">VOLVER ARRIBA</a></li>
         </ul>
     </div>
-    <div id="css">
+    <div data-aos="fade-up" id="css">
         <h2>Mis ejercicios de Introducción a CSS</h2>
         <ul>
             <li><a href="html-ejerc8-color.html">Página con colores</a></li>
@@ -88,11 +221,22 @@
             <li><a href="html-ejerc14-desafio-clases.html">Página con clase desafío</a></li>
             <li><a href="html-ejerc15-selectores.html">Tutoriales sobre selectores</a></li>
             <li><a href="html-ejerc16-escalada.html">Página sobre escalada</a></li>
+            <li><a href="#indice">VOLVER ARRIBA</a></li>
         </ul>
     </div>
-    <div id="final">
+    <div data-aos="fade-up" id="css2">
+        <h2>Mis ejercicios finales de HTML & CSS</h2>
+        <ul>
+            <li><a href="html-ejerc18-vinculos.html">Página con colores</a></li>
+            <li><a href="html-ejerc19-vinculos_internos.html">Página sobre una criatura</a></li>
+            <li><a href="html-ejerc20-tabla.html">Página sobre una segunda criatura</a></li>
+            <li><a href="html-ejerc21-proyecto_recetas.html">Página con formato</a></li>
+            <li><a href="#indice">VOLVER ARRIBA</a></li>
+        </ul>
+    </div>
+    <div data-aos="fade-up" id="final">
         <h2>Web hosting</h2>
-        <p>Yo he creado una página web, ¿pero de qué me sirve si nadie puede accieder a ella a través de internet? Pues
+        <p>Yo he creado una página web, ¿pero de qué me sirve si nadie puede acceder a ella a través de internet? Pues
             no
             sirve de mucho si tú eres el único que puede acceder a ella. Para que todo el mundo pueda acceder a ella es
             necesario que la página se ubique en un servidor accesible mediante internet. Un servidor es básicamente un
@@ -105,8 +249,8 @@
             hosting cuestan dinero también, aunque hay algunos que cuestan muy poco o que son gratuitos.</p>
         <p>El servicio de hosting que había utilizado antes de hosting en la nube eatá proporcionado por el servicio de
             google drive
-            "drive to web". Pero ahora usaré el sitio "github" debido a su mayor velocidad y rendimiento.</p>
-        <a href="https://51yzyihhxwbk0sm6koxxqq-on.drv.tw/WEB/">Enlace a mi página web</a>
+            "drive to web". Pero ahora uso el sitio "github" ¿Por qué? Muy sencillo, porque es mejor ;)</p>
+            <ul><li><a href="#indice">VOLVER ARRIBA</a></li></ul>
     </div>
 </body>
 
