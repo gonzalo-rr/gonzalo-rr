@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        .titulos {
+            color: rgba(0, 0, 0, 0.788);
+            font-weight: 800;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: larger;
+        }
+
+        table {
+            padding: 25px;
+            border-style: double;
+            border-width: 5px;
+            border-color: rgba(0, 0, 0, 0.5);
+            background-color: lightslategrey;
+        }
+
+        th,
+        td {
+            padding: 25px;
+            border-style: dotted;
+            border-color: rgba(219, 185, 112, 0.41);
+            border-width: 2px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: darkblue;
+            font-size: large;
+            width: 200px;
+            height: 100px;
+        }
+
+        p {
+            text-align: center;
+            padding: 2px;
+            margin: 2px;
+        }
+
+        .titulos p {
+            background-color: white;
+            padding: 2px;
+            margin: 2px;
+        }
+
+        img {
+            margin: 5px;
+            align-content: center;
+        }
+
+        #eeuu {
+            background-image: url(imagenes/eeuu.png);
+            background-position: unset;
+            background-size: cover;
+        }
+
+        #españa {
+            background-image: url(imagenes/españa.png);
+            background-position: unset;
+            background-size: cover;
+        }
+
+        #francia {
+            background-image: url(imagenes/francia.png);
+            background-position: unset;
+            background-size: cover;
+        }
+
+        #rusia {
+            background-image: url(imagenes/rusia.png);
+            background-position: unset;
+            background-size: cover;
+        }
+
+        #argentina {
+            background-image: url(imagenes/argentina.png);
+            background-position: unset;
+            background-size: cover;
+        }
+
+        #china {
+            background-image: url(imagenes/china.png);
+            background-position: unset;
+            background-size: cover;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: inherit;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    </style>
+    <title>Tabla</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <th></th>
+            <th class="titulos">Pop</th>
+            <th class="titulos">Rock</th>
+            <th class="titulos">Rap</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="eeuu" class="titulos">
+                    <p>EEUU</p>
+                </td>
+                <td>Beyoncé</td>
+                <td>Green Day <img src="imagenes/greenday.png" height="40px"></img></td>
+                <td>Eminem</td>
+            </tr>
+            <tr>
+                <td id="españa" class="titulos">
+                    <p>España</p>
+                </td>
+                <td>Aitana</td>
+                <td>Fito & Fitipaldis <img src="imagenes/fitoyfitipaldis.jpg" height="40px"></img></td>
+                <td>El Jincho</td>
+            </tr>
+            <tr>
+                <td id="francia" class="titulos">
+                    <p>Francia</p>
+                </td>
+                <td>Angèle</td>
+                <td>Johny Hallyday <img src="imagenes/johnnyhallyday.jpg" height="80px"></img></td>
+                <td>Kalash Criminel</td>
+            </tr>
+            <tr>
+                <td id="rusia" class="titulos">
+                    <p>Rusia</p>
+                </td>
+                <td>Kina</td>
+                <td>Lumen <img src="imagenes/lumen.jpg" height="80px"></img></td>
+                <td>Umbrella Vendetta</td>
+            </tr>
+            <tr>
+                <td id="argentina" class="titulos">
+                    <p>Argentina</p>
+                </td>
+                <td>Juan Ingaramo</td>
+                <td>Los Pericos</td>
+                <td>Duki <img src="imagenes/duki.jpg" height="80px"></img></td>
+            </tr>
+            <tr>
+                <td id="china" class="titulos">
+                    <p>China</p>
+                </td>
+                <td>Nex7</td>
+                <td>Cui Jian</td>
+                <td>PG One<img src="imagenes/pgone.jpg" height="80px"></img></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
