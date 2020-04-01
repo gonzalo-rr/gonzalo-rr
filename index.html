@@ -1,202 +1,53 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>Gonzalo</title>
     <meta charset="utf-8">
-    <style>
-        body {
-            background-image: url(imagenes/fondo3.jpg);
-            background-repeat: no-repeat;
-            background-color: antiquewhite;
-            padding: 15px;
-            background-size: 100%;
-            background-position: center;
-            background-attachment: fixed;
-        }
-
-        div {
-            margin-top: 10px;
-            padding: 20px;
-            animation-name: animacion;
-            animation-duration: 5s;
-        }
-
-        @keyframes animacion {
-            0% {
-                opacity: 0%;
-            }
-
-            90% {
-                opacity: 0%;
-            }
-
-            100% {
-                opacity: 100%;
-            }
-        }
-
-        #bienvenida {
-            opacity: 0%;
-            color: orange;
-            font-weight: bold;
-            font-size: xx-large;
-            align-content: center;
-            animation-name: bienvenidos;
-            animation-duration: 4s;
-        }
-
-        @keyframes bienvenidos {
-            0% {
-                margin-top: 40%;
-                opacity: 0%;
-            }
-
-            25% { 
-                opacity: 100%;
-            }
-
-            75% {
-                opacity: 100%;
-            }
-
-            100% {
-                opacity: 0%;
-            }
-        }
-
-        #indice {
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.747);
-            font-family: 'Times New Roman', Times, serif;
-        }
-
-        #introducción {
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.747);
-            font-family: 'Times New Roman', Times, serif;
-        }
-
-        #presentación {
-            width: max-content;
-            float: left;
-            width: 1100px;
-        }
-
-        #foto {
-            width: max-content;
-            float: right;
-        }
-
-        #html {
-            background-color: rgba(0, 0, 0, 0.788);
-            font-family: Georgia, 'Times New Roman', Times, serif
-        }
-
-        #css {
-            background-color: rgba(0, 0, 0, 0.486);
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
-        #css2 {
-            background-color: rgba(0, 0, 0, 0.486);
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
-        #final {
-            background-color: rgba(0, 0, 0, 0.329);
-        }
-
-        #volver{position: fixed;}
-
-        img {
-            background-color: rgba(0, 0, 0, 0.164);
-            margin: auto;
-            display: block;
-        }
-
-        p {
-            font-size: large;
-            color: white;
-        }
-
-        h1,
-        h2,
-        h3 {
-            color: orange;
-        }
-
-        a {
-            padding: 0px;
-            background-color: rgba(214, 144, 15, 0.863);
-            color: springgreen;
-            font-size: large;
-            text-decoration: none;
-            transition-duration: 500ms;
-            transition-property: background-color, color;
-        }
-
-        a:hover {
-            background-color: rgba(240, 140, 140, 0);
-            color: white;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        li {
-            text-align: center;
-            margin: 30px;
-        }
-
-        #indice ul {
-            padding-left: 18%;
-        }
-
-        #indice ul li {
-            display: inline;
-        }
-               
-    </style>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gonzalo</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
-
 <body>
-    <h1 data-aos="fade-up" id="bienvenida">
-        BIENVENIDOS A MI PÁGINA WEB
-    </h1>
-    <div data-aos="fade-up" id="introducción">
-        <div data-aos="fade-up" id="presentación">
-            <h1>Mi trabajo en TICII Gonzalo Rodríguez Rodríguez</h1>
-            <p>¡Bienvenidos a mi página Web! Yo soy Gonzalo Rodríguez, estudiante de segundo de bachillerato del IES Dr.
-                Fleming
-                de Oviedo (España).
-                Soy de la clase C1, en la que estoy con muy buenos compañeros y amigos.</p>
-            <p>Aunque no me gusta mucho estudiar y soy un poco vago, mis clases favoritas son física y TIC, en esta
-                última
-                creamos nuestras propias páginas web. Me gusta la informática y me he divertido
-                mucho haciéndolas.</p>
-            <p>Fuera del instituto me gusta el cine, la fotografía y ver series. También me gusta quedar con mis amigos,
-                todo es
-                más divertido con amigos y siempre me lo paso genial
-                con ellos. </p>
-        </div>
-        <div data-aos="fade-up" id="foto">
-            <img src="imagenes/fotomia.jpg" height="300">
-        </div>
-    </div>
-    <div data-aos="fade-up" id="indice">
-        <h2>Índice</h2>
-        <ul>
+    <div id="bienvenida">BIENVENIDO A MI PÁGINA WEB</div>
+    <header>MI TRABAJO EN TIC 2</header>
+    <nav>
+        <ul id="indice">
             <li><a href="#html">Ejercicios de introducción a HTML</a></li>
             <li><a href="#css">Ejercicios de introducción a CSS</a></li>
             <li><a href="#css2">Ejercicios finales de HTML y CSS</a></li>
-            <li><a href="#final">¿Qué es Web Hosting?</a></li>
+            <li><a href="#webhosting">¿Qué es Web Hosting?</a></li>
+            <li><a href="#websemantica">¿Qué es Web Semántica?</a></li>
         </ul>
-    </div>
-    <div data-aos="fade-up" id="html">
+    </nav>
+    <ul id="volver">
+        <li><a href="#indice">VOLVER ARRIBA</a></li>
+    </ul>
+    <article id="presentacion" data-aos="fade-up">
+        <h1>Presentación:</h1>
+        <ul>
+            <li>
+                <p>¡Bienvenidos a mi página Web! Yo soy Gonzalo Rodríguez, estudiante de segundo de bachillerato del IES
+                    Dr.
+                    Fleming
+                    de Oviedo (España).
+                    Soy de la clase C1, en la que estoy con muy buenos compañeros y amigos.</p>
+                <p>Aunque no me gusta mucho estudiar y soy un poco vago, mis clases favoritas son física y TIC, en esta
+                    última
+                    creamos nuestras propias páginas web. Me gusta la informática y me he divertido
+                    mucho haciéndolas.</p>
+                <p>Fuera del instituto me gusta el cine, la fotografía y ver series. También me gusta quedar con mis
+                    amigos,
+                    todo es
+                    más divertido con amigos y siempre me lo paso genial
+                    con ellos. </p>
+            </li>
+            <li>
+                <img src="imagenes/fotomia.jpg" height="300" alt="imagen no carga">
+            </li>
+        </ul>
+    </article>
+    <article id="html" data-aos="fade-up">
         <h2>Mis ejercicios Introducción HTML</h2>
         <ul>
             <li><a href="html-ejerc1-intro1.html">Introducción</a></li>
@@ -206,10 +57,9 @@
             <li><a href="html-ejerc5-utf-8.html">Importancia del utf-8</a></li>
             <li><a href="html-ejerc6-img.html">Lístas con imágenes</a></li>
             <li><a href="html-ejerc7-escalada.html">Página sobre escalada</a></li>
-            <li><a href="#indice">VOLVER ARRIBA</a></li>
         </ul>
-    </div>
-    <div data-aos="fade-up" id="css">
+    </article>
+    <article id="css" data-aos="fade-up">
         <h2>Mis ejercicios de Introducción a CSS</h2>
         <ul>
             <li><a href="html-ejerc8-color.html">Página con colores</a></li>
@@ -221,21 +71,22 @@
             <li><a href="html-ejerc14-desafio-clases.html">Página con clase desafío</a></li>
             <li><a href="html-ejerc15-selectores.html">Tutoriales sobre selectores</a></li>
             <li><a href="html-ejerc16-escalada.html">Página sobre escalada</a></li>
-            <li><a href="#indice">VOLVER ARRIBA</a></li>
         </ul>
-    </div>
-    <div data-aos="fade-up" id="css2">
+    </article>
+    <article id="css2" data-aos="fade-up">
         <h2>Mis ejercicios finales de HTML & CSS</h2>
         <ul>
             <li><a href="html-ejerc18-vinculos.html">Mis marcas de coche favoritas</a></li>
             <li><a href="html-ejerc19-vinculos_internos.html">Mis marcas de coche favoritas ordenadas</a></li>
-            <li><a href="html-ejerc20-tabla.html">Tabla de músicoa según el país y el estilo</a></li>
+            <li><a href="html-ejerc20-tabla.html">Tabla sobre musicos por país y estilo</a></li>
             <li><a href="html-ejerc21-proyecto_recetas.html">Recetas mexicanas</a></li>
-            <li><a href="#indice">VOLVER ARRIBA</a></li>
         </ul>
-    </div>
-    <div data-aos="fade-up" id="final">
-        <h2>Web hosting</h2>
+    </article>
+
+
+    <input type="checkbox" id="host"></input>
+    <label for="host">Web Hosting</label>
+    <article id="webhosting" class="host">
         <p>Yo he creado una página web, ¿pero de qué me sirve si nadie puede acceder a ella a través de internet? Pues
             no
             sirve de mucho si tú eres el único que puede acceder a ella. Para que todo el mundo pueda acceder a ella es
@@ -250,8 +101,37 @@
         <p>El servicio de hosting que había utilizado antes de hosting en la nube eatá proporcionado por el servicio de
             google drive
             "drive to web". Pero ahora uso el sitio "github" ¿Por qué? Muy sencillo, porque es mejor ;)</p>
-            <ul><li><a href="#indice">VOLVER ARRIBA</a></li></ul>
-    </div>
+    </article>
+
+
+
+
+
+
+    <input type="checkbox" id="semantica"></input>
+    <label for="semantica">Web Semántica</label>
+    <article id="websemantica" class="semantica">
+        <p>Web Semántica es un conjunto de actividades desarrolladas en el seno de World Wide Web Consortium con tendencia a la
+            creación de tecnologías para publicar datos legibles por aplicaciones informáticas (máquinas en la
+            terminología de la Web semántica). Se basa en la idea de añadir metadatos semánticos y ontológicos a la
+            World Wide Web. Esas informaciones adicionales que describen el contenido, el significado y la relación de
+            los datos— se deben proporcionar de manera formal, para que así sea posible evaluarlas automáticamente por
+            máquinas de procesamiento. El objetivo es mejorar Internet ampliando la interoperabilidad entre los sistemas
+            informáticos usando "agentes inteligentes". Agentes inteligentes son programas en las computadoras que
+            buscan información sin operadores humanos.</p>
+    </article>
+
+
+
+
+
+    <footer>
+        <img src="imagenes/logo.png" alt="Imagen no carga" width="100px">
+        <div id="derecha">
+            <p>Página hecha por Gonzalo Rodríguez<br>
+                srgonzalorr@gmail.com</p>
+        </div>
+    </footer>
 </body>
 
 </html>
