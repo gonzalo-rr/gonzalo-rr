@@ -1,0 +1,334 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+header, nav, article, imput {
+    animation-name: animacion;
+    animation-duration: 5000ms;
+}
+
+
+@keyframes animacion {
+    0% {
+        opacity: 0%;
+    }
+
+    90% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+#bienvenida {
+    opacity: 0%;
+    color: orange;
+    font-weight: bold;
+    font-size: xx-large;
+    align-content: center;
+    animation-name: bienvenidos;
+    animation-duration: 4s;
+}
+
+@keyframes bienvenidos {
+    0% {
+        margin-top: 40%;
+        opacity: 0%;
+    }
+
+    25% {
+        opacity: 100%;
+    }
+
+    75% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: none;
+    color: none;
+    font-size: none;
+    font-family: none;
+    font-weight: none;
+    text-decoration: none;
+}
+
+
+
+
+
+body{
+    background-image: url(imagenes/fondo3.jpg);
+}
+
+
+
+
+
+header{
+    margin: 5px;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.747);
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: orange;
+}
+
+
+
+
+
+
+nav{
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.747);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    margin: 8px;
+    padding: 0px;
+    font-size: medium;
+    font-weight: normal;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+
+
+article{
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.747);
+    font-size: medium;
+    font-weight: normal;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+
+
+
+
+#volver{
+    z-index: 10;
+    position: fixed;
+    right: 20px;
+    top: 0px;
+    margin-left: 45%;
+    background-color: rgba(0, 0, 0, 0.747);
+}
+#volver li{
+    margin: 8px;
+    padding: 0px;
+    font-size: medium;
+    font-weight: normal;
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+}
+
+
+
+
+
+ul{
+    list-style: none;
+}
+
+li{
+    text-align: center;
+    margin: 30px;
+}
+h1,h2,h3{
+    color: orange;
+}
+a{
+    padding: 5px;
+    background-color: rgba(214, 144, 15, 0.863);
+    color: springgreen;
+    font-size: large;
+    border-radius: 5px;
+    border-style: groove;
+    border-color: white;
+    transition-duration: 500ms;
+    transition-property: background-color, color;
+}
+a:hover{
+    background-color: rgba(255, 166, 0, 0);
+    color: white;
+}
+p{
+    font-size: large;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[id^="host"]{
+    display: none;
+}
+input[id^="host"] + label {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    text-align: center;
+    font-size: large;
+    font-weight: 200;
+    font-family: fantasy;
+    color: violet;
+    background: rgba(255, 34, 34, 0.644);
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[id^="host"]:checked + label {
+    color: #333;
+    background: #ccc;
+}
+input[id^="host"] ~ .host {
+    width: 90%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: 10px auto 0;
+}
+input[id^="host"]:checked + label + .host{
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.747);
+    font-size: medium;
+    font-weight: normal;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    width: 98%;
+    height: 200px;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[id^="semantica"]{
+    display: none;
+}
+input[id^="semantica"] + label {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    text-align: center;
+    font-size: large;
+    font-weight: 200;
+    font-family: fantasy;
+    color: violet;
+    background: rgba(255, 34, 34, 0.644);
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[id^="semantica"]:checked + label {
+    color: #333;
+    background: #ccc;
+}
+input[id^="semantica"] ~ .semantica {
+    width: 90%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: 10px auto 0;
+}
+input[id^="semantica"]:checked + label + .semantica{
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.747);
+    font-size: medium;
+    font-weight: normal;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    width: 98%;
+    height: 200px;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    margin-top: 10px;
+    padding: 20px;
+    background-color: black;
+    font-size: medium;
+    font-weight: normal;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+#derecha{
+    display: flex;
+    float: right;
+}
