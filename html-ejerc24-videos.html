@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #videos_youtube {
+            height: 700px;
+            margin: 0 auto;
+            color: black;
+            background-color: rgba(115, 128, 0, 0.507);
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #videos_youtube ul {
+            height: 600px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #videos_youtube ul li {
+            margin-top: 40px;
+            margin: 15px;
+            list-style: none;
+        }
+
+        #videos_youtube ul li video {
+            background-color: rgba(65, 105, 225, 0.397);
+            background-position: center;
+            border-radius: 0%;
+            border-style: solid;
+            padding: 10px;
+            transition-property: background-color;
+            transition-duration: 500ms;
+        }
+
+        #videos_propios ul li video:hover {
+            background-color: rgba(255, 0, 0, 0.562);
+        }
+
+        h2 {
+            justify-self: center;
+            padding: 20px;
+            font-size: xx-large;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            color: currentColor;
+            transition-duration: 500ms;
+        }
+
+        h2:hover{
+            color: darkmagenta;
+        }
+
+
+
+
+
+
+
+
+        body {
+            padding: 0px;
+            margin: 0px;
+            width: 100vmax;
+            height: 1000px;
+            background-color: seagreen;
+        }
+
+        #videos_propios {
+            height: 700px;
+            margin: 0 auto;
+            color: black;
+            background-color: rgba(0, 128, 128, 0.507);
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #videos_propios ul {
+            padding: 20px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #videos_propios ul li {
+            margin-top: 40px;
+            margin: 15px;
+            list-style: none;
+        }
+
+        #videos_propios ul li video {
+            background-color: rgba(65, 105, 225, 0.397);
+            background-position: center;
+            border-radius: 0%;
+            border-style: solid;
+            padding: 10px;
+            transition-property: background-color;
+            transition-duration: 500ms;
+        }
+
+        #videos_propios ul li video:hover {
+            background-color: rgba(255, 0, 0, 0.562);
+        }
+
+        h2 {
+            padding: 20px;
+            font-size: xx-large;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            color: crimson;
+        }
+
+        p {
+            font-size: medium;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+            font-weight: 200;
+        }
+
+
+
+
+
+
+
+
+        nav {
+            height: 100px;
+            margin: 0 auto;
+            color: black;
+            background-color: rgba(107, 0, 128, 0.507);
+            padding: 0px;
+            margin: 0px;
+        }
+
+        nav ul {
+            padding: 20px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-top: 40px;
+            margin: 15px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: darkgreen;
+            text-decoration: none;
+            background-color: blanchedalmond;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: large;
+            font-weight: 300;
+        }
+
+        nav ul li a:hover {
+            color: brown;
+            background-color: darkkhaki;
+            border-radius: 0%;
+            padding: 5px;
+            transition: ease-in-out;
+            transition-duration: 500ms;
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#videos_propios">Vídeos que yo considero graciosos</a></li>
+            <li><a href="#videos_youtube">Escenas de películas sacadas de youtube</a></li>
+        </ul>
+    </nav>
+    <div id="videos_propios">
+        <h2>VIDEOS GRACIOSOS :D</h2>
+        <ul>
+            <li>
+                <video controls height="250" width="350">
+                    <source src="videos/granada.mp4" type="video/mp4">
+                </video>
+                <p>Este vídeo es gracioso porque se ve a unos militares que fallan en meter una granada cegadora en una
+                    habitación y presuntamente explota en el pasillo. A continuación se ve a unos señores que bailan con
+                    el ataud de uno de los militares según una tradición funeraria de Ghana.</p>
+            </li>
+            <li>
+                <video controls height="250" width="350">
+                    <source src="videos/sofa.mp4" type="video/mp4">
+                </video>
+                <p>Este vídeo es gracioso ya que se ve a unos jóvenes intentando poner un sofá encima de un tejado pero
+                    por desgracia este se cae, presuntamente aplastando a uno que termina teniendo un funeral según la
+                    tradición ghanesa.</p>
+            </li>
+            <li>
+                <video controls height="250" width="350">
+                    <source src="videos/tobogan.mp4" type="video/mp4">
+                </video>
+                <p>En este vídeo vemos un tobogán al aire libre y a un señor que lo esta probando. En una de las curvas
+                    cerradas la velocidad que lleva supera la fuerza de la gravedad y la de fricción resultando en una
+                    caida al vacío. Momentos más tarde se ve su funeral en Ghana donde, por tradición, se baila.</p>
+            </li>
+            <li>
+                <video controls height="250" width="350">
+                    <source src="videos/ataud.mp4" type="video/mp4">
+                </video>
+                <p>Este vídeo es especialmente gracioso debido a que en este caso, uno de los funerales en los que se
+                    baila con el ataúd termina mal cuando este se cae sobre uno de los bailarines al que luego se le
+                    realiza un funeral al estilo ghanés.</p>
+            </li>
+        </ul>
+        <div id="videos_youtube">
+            <h2>MIS ESCENAS DE CINE FAVORITAS</h2>
+            <ul>
+                <li>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/bbX5KM0tFVk" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p>La película <em>Blade Runner 2049</em> es una secuela a la película <em>Blade Runner</em>.
+                        La película se sitúa en un ambiente futurístico del tipo <em>Future Punk</em> en el que existen
+                        unos androides ron rasgos humanos llamados <em>Replicantes</em>, que son utilizados como
+                        esclavos en otros planetas y satélites. El protagonista de esta película es uno de ellos pero
+                        trabaja en la policía eliminando a aquellos modelos antiguos que pedían libertad y poder vivir
+                        más de 5 años. Esta escena es una que ocurre al principio del largometraje y el protagonista se
+                        encuentra con uno de los Replicantes rebeldes y se ve obligado a eliminarle.</p>
+                </li>
+                <li>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/rDuetklFtDQ" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p>Esta película, <em>The Dark Knight Rises</em>, es dirigida por Christopher Nolan y es considerada
+                        como una de las mejores películas de superheroes. En esta escena se ve el primer enfrentamiento
+                        entre Bane, caracterizado por Tom Hardy, y Batman, de Christian Bale, en lo que más tarde en la
+                        película, derivaría en un enfrentamiento por la supervivencia de Gotham y sus habitantes.</p>
+                </li>
+                <li>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/7Y59oGt2XWU" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p>La película <em>Baby Driver</em> sigue la historia de <em>Baby</em> encargado de ser el conductor
+                        de escape de una banda de ladrones. La escena en cuestión aparece al final de la obra y sigue al
+                        protagonista mientras huye de la policía bajo la amenaza de muerte de sus compañeros de la banda
+                        a loa cuales había traicionado previamente.</p>
+                </li>
+                <li>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/YUi13NeQOd0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p>Esta es una de las obras más conocidas de Tarantino, <em>Malditos Bastardos</em> en la que un
+                        grupo de militares judíos estadounidenses se infiltra en Francia para matar alemanes durante la
+                        ocupación Nazi. He elegido esta escena ya que refleja la capacidad de Quentin Tarantino de
+                        escribir diálogos ya que, haciendose pasar por italianos, tres miembros del grupo judío se
+                        encuentran a un alto mando alemán que les ridiculiza al hablar mejor italiano que ellos. La
+                        escena está cargada de tensión ya que ambos saben que su falsa identidad ha quedado desvelada.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+</body>
+
+</html>
