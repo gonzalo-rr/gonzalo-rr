@@ -113,7 +113,7 @@ nav{
     background-color: rgba(0, 0, 0, 0.747);
 }
 nav ul{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
 }
 nav ul li{
@@ -176,10 +176,21 @@ li{
 h1,h2,h3{
     color: orange;
 }
+
+nav a{
+    color: violet;
+    background: rgba(255, 34, 34, 0.644);
+}
+#volver a{
+    color: violet;
+    background: rgba(255, 34, 34, 0.644);
+}
+article a{
+    background-color: rgba(214, 144, 15, 0.6);
+    color: springgreen;
+}
 a{
     padding: 5px;
-    background-color: rgba(214, 144, 15, 0.863);
-    color: springgreen;
     font-size: large;
     border-radius: 5px;
     border-style: groove;
@@ -221,7 +232,7 @@ input[id^="host"] + label {
     font-weight: 200;
     font-family: fantasy;
     color: violet;
-    background: rgba(255, 34, 34, 0.644);
+    background: rgba(255, 34, 34, 0.6);
     border-style: solid;
     border-color: white;
     border-radius: 5px;
