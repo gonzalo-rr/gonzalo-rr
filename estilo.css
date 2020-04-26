@@ -279,7 +279,7 @@ input[id^="host"]:checked + label + .host{
     font-weight: normal;
     font-family: 'Courier New', Courier, monospace;
     color: white;
-    width: 98%;
+    width: 96%;
     height: 4%;
     opacity: 1;
 }
@@ -336,7 +336,7 @@ input[id^="semantica"]:checked + label + .semantica{
     font-weight: normal;
     font-family: 'Courier New', Courier, monospace;
     color: white;
-    width: 98%;
+    width: 96%;
     height: 4%;
     opacity: 1;
 }
