@@ -166,6 +166,9 @@ nav li a{
 nav li a:hover{
     background-color: #434343;
 }
+#ejercicios:hover{
+    background-color: #434343;
+}
 nav > li{
     list-style: none;
     float: left;
