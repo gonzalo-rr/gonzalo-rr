@@ -1,10 +1,30 @@
 html {
     scroll-behavior: smooth;
 }
+:root {
+    font-size: 1vw;
+}
 
 
+::-webkit-scrollbar{
+    width: 0.8%;
+}
 
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 0.5rem rgba(26, 26, 26, 0.699);
+    border-radius: 1rem;
+}
 
+::-webkit-scrollbar-thumb{
+    background: radial-gradient(rgb(124, 124, 124), rgb(36, 36, 36));
+    border-radius: 1rem;
+    transition-property: all;
+    transition-duration: 2000ms;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: radial-gradient(rgba(124, 124, 124, 0.5), rgba(36, 36, 36, 0.5));
+}
 
 
 
@@ -32,10 +52,11 @@ header, nav, article, imput {
     opacity: 0%;
     color: orange;
     font-weight: bold;
-    font-size: xx-large;
+    font-size: 1.8em;
     align-content: center;
     animation-name: bienvenidos;
     animation-duration: 4s;
+    display: flex;
 }
 
 @keyframes bienvenidos {
@@ -62,7 +83,12 @@ header, nav, article, imput {
 
 
 
-
+#presentacion img {
+    height: 30rem;
+}
+footer img {
+    height: 5rem;
+}
 
 
 
@@ -71,8 +97,8 @@ header, nav, article, imput {
 
 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0em;
+    padding: 0em;
     background-color: none;
     color: none;
     font-size: none;
@@ -86,7 +112,9 @@ header, nav, article, imput {
 
 
 body{
-    background-image: url(imagenes/fondo3.jpg);
+    background-image: url(imagenes/fondo_planta.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -94,34 +122,67 @@ body{
 
 
 header{
-    margin: 5px;
-    padding: 4px;
+    width: 97.5%;
+    margin: 0.5rem;
+    padding: 1rem;
     background-color: rgba(0, 0, 0, 0.747);
-    font-size: xx-large;
+    font-size: 1.8em;
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: orange;
+    display: flex;
 }
 
 
 
+ul, ol{
+    list-style: none;
+}
 
 
 
 nav{
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.747);
+    background-color: rgb(0, 0, 0);  
+    position: fixed;
+    top:1rem;
+    right:5rem;
+    vertical-align: top;
+    text-align: left;
+    border-color: white;
+    border-width: 0.09rem;
+    border-style: solid;
 }
-nav ul{
-    display: inline-flex;
-    justify-content: center;
+nav li a{
+    background-color: black;
+    color: white;    
+    display: block;
+    font-size: 1.5em;
 }
-nav ul li{
-    margin: 8px;
-    padding: 0px;
-    font-size: medium;
-    font-weight: normal;
-    font-family: 'Courier New', Courier, monospace;
+nav li a:hover{
+    background-color: #434343;
+}
+nav > li{
+    list-style: none;
+    float: left;
+    padding: 0.5rem;
+}
+nav li ul{
+    display: none;
+    position: absolute;
+    width: 8rem;
+    border-color: white;
+    border-width: 0.09rem;
+    border-style: solid;
+}
+nav li:hover > ul{
+    display: block;
+}
+nav li ul li{
+    position: relative;
+}
+nav li ul li ul{
+    right: -8.2rem;
+    top: 0rem;
 }
 
 
@@ -129,81 +190,42 @@ nav ul li{
 
 
 
-
+h1,h2,h3{
+    font-size: 2rem;
+    color: orange;
+}
 article{
-    margin-top: 10px;
-    padding: 20px;
+    margin-top: 1%;
+    padding: 2%;
     background-color: rgba(0, 0, 0, 0.747);
-    font-size: medium;
+    font-size: 0.5rem;
     font-weight: normal;
     font-family: 'Courier New', Courier, monospace;
     color: white;
-}
-
-
-
-
-
-#volver{
-    z-index: 10;
-    position: fixed;
-    right: 20px;
-    top: 0px;
-    margin-left: 45%;
-    background-color: rgba(0, 0, 0, 0.747);
-}
-#volver li{
-    margin: 8px;
-    padding: 0px;
-    font-size: medium;
-    font-weight: normal;
-    font-family: 'Courier New', Courier, monospace;
-    display: inline-block;
-}
-
-
-
-
-
-ul{
-    list-style: none;
-}
-
-li{
-    text-align: center;
-    margin: 30px;
-}
-h1,h2,h3{
-    color: orange;
-}
-
-nav a{
-    color: violet;
-    background: rgba(255, 34, 34, 0.644);
-}
-#volver a{
-    color: violet;
-    background: rgba(255, 34, 34, 0.644);
+    text-align: justify;
 }
 article a{
     background-color: rgba(214, 144, 15, 0.6);
     color: springgreen;
-}
-a{
-    padding: 5px;
-    font-size: large;
-    border-radius: 5px;
+    padding: 0.3rem;
+    font-size: 1rem;
+    border-radius: 3rem;
     border-style: groove;
     border-color: white;
     transition-duration: 500ms;
     transition-property: background-color, color;
 }
-a:hover{
+article a:hover{
     background-color: rgba(255, 166, 0, 0);
     color: white;
 }
+article li {
+    text-align: center;
+    margin: 2rem;
+    padding: 0rem;
+}
 p{
-    font-size: large;
+    font-size: 1.5rem;
     color: white;
 }
 
@@ -224,18 +246,18 @@ input[id^="host"]{
 }
 input[id^="host"] + label {
     display: block;
-    width: 200px;
-    margin: 0 auto;
-    padding: 5px 20px;
+    width: 10%;
+    margin: 2rem auto;
+    padding: 0.3rem;
     text-align: center;
-    font-size: large;
+    font-size: 1em;
     font-weight: 200;
     font-family: fantasy;
     color: violet;
-    background: rgba(255, 34, 34, 0.6);
+    background: rgba(255, 34, 34, 0.644);
     border-style: solid;
     border-color: white;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     cursor: pointer;
 }
 input[id^="host"]:checked + label {
@@ -247,18 +269,18 @@ input[id^="host"] ~ .host {
     height: 0;
     overflow: hidden;
     opacity: 0;
-    margin: 10px auto 0;
+    margin: 2rem auto 0;
 }
 input[id^="host"]:checked + label + .host{
-    margin-top: 10px;
-    padding: 20px;
+    margin: 1rem;
+    padding: 1rem;
     background-color: rgba(0, 0, 0, 0.747);
-    font-size: medium;
+    font-size: 1.5em;
     font-weight: normal;
     font-family: 'Courier New', Courier, monospace;
     color: white;
     width: 98%;
-    height: 200px;
+    height: 4%;
     opacity: 1;
 }
 
@@ -281,18 +303,18 @@ input[id^="semantica"]{
 }
 input[id^="semantica"] + label {
     display: block;
-    width: 200px;
-    margin: 0 auto;
-    padding: 5px 20px;
+    width: 10%;
+    margin: 2rem auto;
+    padding: 0.3rem;
     text-align: center;
-    font-size: large;
+    font-size: 1em;
     font-weight: 200;
     font-family: fantasy;
     color: violet;
     background: rgba(255, 34, 34, 0.644);
     border-style: solid;
     border-color: white;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     cursor: pointer;
 }
 input[id^="semantica"]:checked + label {
@@ -304,18 +326,18 @@ input[id^="semantica"] ~ .semantica {
     height: 0;
     overflow: hidden;
     opacity: 0;
-    margin: 10px auto 0;
+    margin: 2rem auto 0;
 }
 input[id^="semantica"]:checked + label + .semantica{
-    margin-top: 10px;
-    padding: 20px;
+    margin: 1rem;
+    padding: 1rem;
     background-color: rgba(0, 0, 0, 0.747);
-    font-size: medium;
+    font-size: 1.5em;
     font-weight: normal;
     font-family: 'Courier New', Courier, monospace;
     color: white;
     width: 98%;
-    height: 200px;
+    height: 4%;
     opacity: 1;
 }
 
@@ -330,10 +352,11 @@ input[id^="semantica"]:checked + label + .semantica{
 
 
 footer{
-    margin-top: 10px;
-    padding: 20px;
+    height: 20%;
+    margin-top: 2rem;
+    padding: 2rem;
     background-color: black;
-    font-size: medium;
+    font-size: 1rem;
     font-weight: normal;
     font-family: 'Courier New', Courier, monospace;
     color: white;
